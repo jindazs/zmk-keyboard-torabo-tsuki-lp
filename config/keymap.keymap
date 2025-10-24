@@ -30,11 +30,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans           &trans            &trans
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans           &trans            &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &msc MOVE_Y(10)  &msc MOVE_Y(-10)  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans            &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans            &trans
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans            &trans
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans            &trans
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mo 7   &msc MOVE_Y(-10)  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans            &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans            &trans
             >;
         };
 
@@ -85,6 +85,16 @@
 &trans  &kp TAB  &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp TAB     &trans
 &trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp AMPERSAND     &kp AT          &kp LEFT_BRACE  &kp PLUS       &kp F14     &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans          &trans          &trans         &kp F16     &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
