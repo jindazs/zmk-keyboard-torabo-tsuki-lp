@@ -26,7 +26,7 @@
         connecrt1win: connecrt1win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 6>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
+            bindings = <&to 5>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
 
             label = "CONNECRT1WIN";
         };
@@ -37,21 +37,21 @@
 
         base-mac {
             bindings = <
-&none  &none             &none         &none             &none    &none                                                         &none        &none  &none      &none    &none                      &none
-&none  &kp Q             &kp W         &kp E             &kp R    &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
-&none  &kp A             &kp S         &kp D             &lt 1 F  &kp G        &none                   &none                    &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
-&none  &mt LEFT_SHIFT Z  &kp X         &kp C             &kp V    &kp B        &none                   &none                    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
-&none  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1    &lt 2 LANG2  &mt LEFT_COMMAND SPACE  &mt RIGHT_CONTROL SPACE  &lt 3 LANG1  &none  &none      &none    &tog 1                     &none
+&none  &none      &none         &none           &none    &none                                                         &none        &none  &none      &none    &none                      &none
+&none  &kp Q      &kp W         &kp E           &kp R    &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
+&none  &kp A      &kp S         &kp D           &lt 1 F  &kp G        &none                   &none                    &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
+&none  &kp Z      &kp X         &kp C           &kp V    &kp B        &none                   &none                    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
+&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 1    &lt 2 LANG2  &mt LEFT_COMMAND SPACE  &mt RIGHT_CONTROL SPACE  &lt 3 LANG1  &none  &none      &none    &tog 1                     &none
             >;
         };
 
         mouse-mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans                &trans                &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LS(LC(LEFT_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(LEFT_BRACKET)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 4                 &mkp RCLK                &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(PLUS)          &kp LG(MINUS)         &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans                &trans                 &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LS(LC(LEFT_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 4                  &mkp RCLK                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(PLUS)          &kp LG(MINUS)          &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                 &trans                   &trans  &trans
             >;
         };
 
@@ -61,7 +61,7 @@
 &trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LPAR          &kp RPAR           &kp QUESTION   &trans
 &trans  &kp N1    &kp N2             &kp N3    &kp N4      &kp N5       &trans  &trans  &kp EQUAL      &kp MINUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON      &trans
 &trans  &kp N6    &kp N7             &kp N8    &kp N9      &kp N0       &trans  &trans  &kp UNDER      &kp KP_PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMICOLON  &trans
-&trans  &to 6     &trans             &trans    &trans      &trans       &trans  &trans  &kp ASTERISK   &none             &trans            &trans             &kp BACKSLASH  &trans
+&trans  &trans    &trans             &trans    &trans      &trans       &trans  &trans  &kp ASTERISK   &none             &trans            &trans             &kp BACKSLASH  &trans
             >;
         };
 
@@ -108,7 +108,7 @@
         win2 {
             bindings = <
 &trans  &trans    &trans       &trans    &trans      &trans                       &trans             &trans         &trans             &trans                &trans            &trans
-&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp CARET          &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp QUESTION      &trans
+&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp ASTERISK       &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp QUESTION      &trans
 &trans  &kp N1    &kp N2       &kp N3    &kp N4      &kp N5       &trans  &trans  &kp UNDERSCORE     &kp MINUS      &kp GRAVE          &kp LEFT_BRACE        &kp SINGLE_QUOTE  &trans
 &trans  &kp N6    &kp N7       &kp N8    &kp N9      &kp N0       &trans  &trans  &kp F13            &kp COLON      &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SEMICOLON     &trans
 &trans  &to 0     &trans       &trans    &trans      &trans       &trans  &trans  &kp DOUBLE_QUOTES  &none          &trans             &trans                &kp F15           &trans
