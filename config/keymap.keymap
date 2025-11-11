@@ -10,7 +10,7 @@
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
-            layers = <2>;
+            layers = <4>;
         };
     };
 
@@ -26,7 +26,7 @@
         connecrt1win: connecrt1win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 5>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
+            bindings = <&to 1>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
 
             label = "CONNECRT1WIN";
         };
@@ -39,9 +39,19 @@
             bindings = <
 &none  &none      &none         &none           &none    &none                                                         &none        &none  &none      &none    &none                      &none
 &none  &kp Q      &kp W         &kp E           &kp R    &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
-&none  &kp A      &kp S         &kp D           &lt 1 F  &kp G        &none                   &none                    &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
+&none  &kp A      &kp S         &kp D           &lt 2 F  &kp G        &none                   &none                    &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
 &none  &kp Z      &kp X         &kp C           &kp V    &kp B        &none                   &none                    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
-&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 1    &lt 2 LANG2  &mt LEFT_COMMAND SPACE  &mt RIGHT_CONTROL SPACE  &lt 3 LANG1  &none  &none      &none    &tog 1                     &none
+&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 2    &lt 4 LANG2  &mt LEFT_COMMAND SPACE  &mt RIGHT_CONTROL SPACE  &lt 5 LANG1  &none  &none      &none    &tog 2                     &none
+            >;
+        };
+
+        base-win {
+            bindings = <
+&none  &none         &none         &none           &none    &none                                                    &none        &none  &none      &none    &none                      &none
+&none  &kp Q         &kp W         &kp E           &kp R    &kp T                                                    &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
+&none  &kp A         &kp S         &kp D           &lt 2 F  &kp G        &none                   &none               &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
+&none  &kp Z         &kp X         &kp C           &kp V    &kp B        &none                   &none               &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
+&none  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &mo 2    &lt 7 LANG2  &mt LEFT_CONTROL SPACE  &mt LEFT_ALT SPACE  &lt 8 LANG1  &none  &none      &none    &tog 2                     &none
             >;
         };
 
@@ -49,9 +59,19 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans                &trans                 &trans                   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LS(LC(LEFT_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 4                  &mkp RCLK                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 3                  &mkp RCLK                &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(PLUS)          &kp LG(MINUS)          &trans                   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                 &trans                   &trans  &trans
+            >;
+        };
+
+        scroll-layer7 {
+            bindings = <
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
@@ -75,31 +95,11 @@
             >;
         };
 
-        scroll-layer7 {
-            bindings = <
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
-
-        base-win {
-            bindings = <
-&none  &none         &none         &none           &none    &none                                                    &none        &none  &none      &none    &none                      &none
-&none  &kp Q         &kp W         &kp E           &kp R    &kp T                                                    &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
-&none  &kp A         &kp S         &kp D           &lt 6 F  &kp G        &none                   &none               &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
-&none  &kp Z         &kp X         &kp C           &kp V    &kp B        &none                   &none               &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
-&none  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &mo 6    &lt 7 LANG2  &mt LEFT_CONTROL SPACE  &mt LEFT_ALT SPACE  &lt 8 LANG1  &none  &none      &none    &tog 6                     &none
-            >;
-        };
-
         mouse-win {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans                &trans                &trans                   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LS(LC(LEFT_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(LEFT_BRACKET)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 4                 &mkp RCLK                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 3                 &mkp RCLK                &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(PLUS)          &kp LG(MINUS)         &trans                   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                &trans                   &tog 6  &trans
             >;
@@ -131,7 +131,7 @@
 &none  &kp Q      &kp W         &kp E             &kp R  &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
 &none  &kp A      &kp S         &kp D             &kp F  &kp G        &none                   &none             &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
 &none  &kp Z      &kp X         &kp C             &kp V  &kp B        &none                   &none             &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
-&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1  &lt 2 LANG2  &mt LEFT_COMMAND SPACE  &mt RSHIFT SPACE  &lt 3 LANG1  &none  &none      &none    &tog 1                     &none
+&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2  &lt 4 LANG2  &mt LEFT_COMMAND SPACE  &mt RSHIFT SPACE  &lt 5 LANG1  &none  &none      &none    &tog 2                     &none
             >;
         };
     };
