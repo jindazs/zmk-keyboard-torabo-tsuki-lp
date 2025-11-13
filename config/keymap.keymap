@@ -57,11 +57,11 @@
 
         mouse-mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans                  &trans                &trans                 &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LS(LC(LEFT_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &mkp LCLK             &mo 3                  &mkp RCLK                &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(PLUS)          &kp LG(MINUS)          &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &trans                 &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans                  &trans                &trans                 &trans                   &trans  &trans
+&trans  &to 0   &to 1   &trans  &trans  &bt BT_CLR                  &kp LS(LC(LEFT_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans                  &mkp LCLK             &mo 3                  &mkp RCLK                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans                  &kp LG(PLUS)          &kp LG(MINUS)          &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans                  &trans                &trans                 &trans                   &trans  &trans
             >;
         };
 
