@@ -4,15 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <4>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         connect0mac: connect0mac {
