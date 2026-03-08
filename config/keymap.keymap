@@ -19,7 +19,7 @@
 
         scroll {
             bindings = <&mo 3>;
-            key-positions = <36 35>;
+            key-positions = <49 48>;
         };
     };
 
