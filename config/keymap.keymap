@@ -20,6 +20,7 @@
         scroll {
             bindings = <&mo 3>;
             key-positions = <49 48>;
+            layers = <0 1 2 6>;
         };
     };
 
