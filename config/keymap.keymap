@@ -77,11 +77,11 @@
 
         scroll-layer7 {
             bindings = <
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
+&none  &none   &kp A   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
             >;
         };
 
