@@ -40,6 +40,14 @@
 
             label = "CONNECRT1WIN";
         };
+
+        connect2ipados: connect2ipados {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_wait_time 200>, <&bt BT_SEL 0>;
+
+            label = "CONNECT2IPADOS";
+        };
     };
 
     keymap {
@@ -97,11 +105,11 @@
 
         mac3 {
             bindings = <
-&trans  &trans      &trans        &trans        &trans         &trans                         &trans        &trans         &trans        &trans        &trans        &trans
-&trans  &kp ASTRK   &kp N7        &kp N8        &kp N9         &kp SLASH                      &to 0         &to 1          &trans        &trans        &bt BT_CLR    &trans
-&trans  &kp TAB     &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp MINUS  &trans      &trans  &connect0mac  &connecrt1win  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp PLUS   &trans      &trans  &trans        &trans         &trans        &trans        &trans        &trans
-&trans  &kp ESCAPE  &kp N0        &kp PERIOD    &kp BACKSPACE  &kp ENTER  &kp DELETE  &trans  &trans        &trans         &trans        &trans        &to 2         &trans
+&trans  &trans      &trans        &trans        &trans         &trans                         &trans        &trans         &trans           &trans        &trans        &trans
+&trans  &kp ASTRK   &kp N7        &kp N8        &kp N9         &kp SLASH                      &to 0         &to 1          &trans           &trans        &bt BT_CLR    &trans
+&trans  &kp TAB     &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp MINUS  &trans      &trans  &connect0mac  &connecrt1win  &connect2ipados  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp PLUS   &trans      &trans  &trans        &trans         &trans           &trans        &trans        &trans
+&trans  &kp ESCAPE  &kp N0        &kp PERIOD    &kp BACKSPACE  &kp ENTER  &kp DELETE  &trans  &trans        &trans         &trans           &trans        &to 2         &trans
             >;
         };
 
