@@ -69,7 +69,7 @@
 &none  &kp Q             &kp W         &kp E           &kp R      &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P                      &none
 &none  &kp A             &kp S         &kp D           &lt 6 F    &kp G        &none        &none            &kp H        &kp J  &kp K      &kp L    &kp ENTER                  &none
 &none  &mt LEFT_SHIFT Z  &kp X         &kp C           &kp V      &kp B        &none        &none            &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT BACKSPACE  &none
-&none  &mo 6             &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &lt 7 LANG2  &lt 8 SPACE  &mt RCTRL SPACE  &lt 8 LANG1  &none  &none      &none    &to 6                      &none
+&none  &mo 6             &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LCTRL  &lt 7 LANG2  &lt 8 SPACE  &mt RCTRL SPACE  &lt 8 LANG1  &none  &none      &none    &mo 3                      &none
             >;
         };
 
