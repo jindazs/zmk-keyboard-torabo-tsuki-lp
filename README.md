@@ -15,5 +15,5 @@ Keyball39 のキーマップを移植し、Mac 用と Windows 用のレイヤー
 | 10 | Scroll (押している間トラックボールがスクロール) | Mac: 右下 / Windows: 右下の左隣 |
 
 * 切り替え: Space 長押し + 左内側キーで Mac、右内側キーで Windows (再起動・スリープ復帰後は Mac に戻る)
-* Bluetooth: Space 長押し + 右下段の 3 キーで接続先 0/1/2、右下で現在の接続先をクリア
+* Bluetooth: Space 長押し + J / K / L で接続先 0/1/2、Enter で現在の接続先をクリア
 * Windows 側の違い: Ctrl と Win の位置を入れ替え、Cmd 系ショートカットは Ctrl、英数/かなは 無変換/変換、右下は F13

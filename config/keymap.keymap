@@ -92,9 +92,9 @@
             display-name = "Mac Fn";
             bindings = <
 &trans        &trans  &kp LG(RIGHT)  &trans     &bootloader                                   &none      &trans     &trans        &trans        &kp UP
-&kp LG(LEFT)  &trans  &kp DEL        &kp RIGHT  &trans                                        &kp BSPC   &trans     &trans        &trans        &trans
+&kp LG(LEFT)  &trans  &kp DEL        &kp RIGHT  &trans                                        &kp BSPC   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
 &trans        &trans  &trans         &trans     &kp LEFT     &to MAC_BASE  &to WIN_BASE       &kp DOWN   &kp ENTER  &trans        &trans        &trans
-&bootloader   &none   &trans         &none      &none        &trans        &trans             &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
+&bootloader   &none   &trans         &none      &none        &trans        &trans             &trans     &trans     &trans        &trans        &trans
             >;
         };
 
@@ -146,9 +146,9 @@
             display-name = "Win Fn";
             bindings = <
 &trans        &trans  &kp END        &trans     &bootloader                                   &none      &trans     &trans        &trans        &kp UP
-&kp HOME      &trans  &kp DEL        &kp RIGHT  &trans                                        &kp BSPC   &trans     &trans        &trans        &trans
+&kp HOME      &trans  &kp DEL        &kp RIGHT  &trans                                        &kp BSPC   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
 &trans        &trans  &trans         &trans     &kp LEFT     &to MAC_BASE  &to WIN_BASE       &kp DOWN   &kp ENTER  &trans        &trans        &trans
-&bootloader   &none   &trans         &none      &none        &trans        &trans             &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
+&bootloader   &none   &trans         &none      &none        &trans        &trans             &trans     &trans     &trans        &trans        &trans
             >;
         };
 
