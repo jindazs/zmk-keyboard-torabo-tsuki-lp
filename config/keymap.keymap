@@ -61,7 +61,6 @@
             timeout-ms = <50>;
             key-positions = <29 30>;
             bindings = <&mo SCROLL>;
-            layers = <-1>;
         };
     };
 
