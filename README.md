@@ -12,8 +12,9 @@ Keyball39 のキーマップを移植し、Mac 用と Windows 用のレイヤー
 |---|---|---|
 | 0-4 | Mac: Base / Nav / Sym / Num / Fn | 起動時は Mac |
 | 5-9 | Windows: Base / Nav / Sym / Num / Fn | |
-| 10 | Scroll (押している間トラックボールがスクロール) | Mac: 右下 / Windows: 右下の左隣 |
+| 10 | Scroll (押している間トラックボールがスクロール) | Mac: 右下 / Windows: 右下の左隣 / 左右クリック同時押し (コンボ) |
 
 * 切り替え: Space 長押し + 左内側キーで Mac、右内側キーで Windows (再起動・スリープ復帰後は Mac に戻る)
 * Bluetooth: Space 長押し + J / K / L で接続先 0/1/2、Enter で現在の接続先をクリア
 * Windows 側の違い: Ctrl と Win の位置を入れ替え、Cmd 系ショートカットは Ctrl、英数/かなは 無変換/変換、右下は F13
+* 左内側 Space キー長押し (Fn レイヤー) + 右内側 Space キーで `lifeislikeaboat!A` を入力
