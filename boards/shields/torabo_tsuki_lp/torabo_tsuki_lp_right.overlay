@@ -8,7 +8,8 @@
 
     scroller {
 	    layers = <10>; // config/keymap.keymap の SCROLL レイヤー
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 128>;
+        // divisor 128 は ZMK 推奨上限 (16) を超えるため、1/16 x 1/8 の2段チェーンに分割
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 16>, <&zip_scroll_scaler 1 8>;
         process-next;
     };
 };
